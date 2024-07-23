@@ -2,7 +2,7 @@
 include 'config.php';
 
 // Obtener listado de niños
-$sql = "SELECT nombre, apellido, TIMESTAMPDIFF(YEAR, fecha_nac, CURDATE()) AS edad FROM NIÑO";
+$sql = "SELECT nombre, apellido, TIMESTAMPDIFF(MONTH, fecha_nac, CURDATE()) AS edad FROM NIÑO";
 $result = $conn->query($sql);
 ?>
 
@@ -42,7 +42,7 @@ $result = $conn->query($sql);
                 <thead>
                     <tr>
                         <th>Nombre niño</th>
-                        <th>Edad</th>
+                        <th>Edad (meses)</th>
                     </tr>
                 </thead>
                 <tbody>
