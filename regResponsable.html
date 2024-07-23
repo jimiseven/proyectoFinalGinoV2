@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro del Responsable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container mt-5">
+        <h2 class="mb-4">Registro del Responsable</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Jhon" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido_paterno">Apellido Paterno</label>
+                <input type="text" class="form-control" id="apellido_paterno" placeholder="Mamani" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido_materno">Apellido Materno</label>
+                <input type="text" class="form-control" id="apellido_materno" placeholder="Mamani" required>
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular</label>
+                <input type="text" class="form-control" id="celular" placeholder="76211221" required>
+            </div>
+            <div class="form-group">
+                <label for="parentesco">Parentesco</label>
+                <select class="form-control" id="parentesco" required>
+                    <option value="Padre, Madre">Padre, Madre</option>
+                    <option value="Hermano, Hermana">Hermano, Hermana</option>
+                    <option value="Tío, Tía">Tío, Tía</option>
+                    <option value="Abuelo, Abuela">Abuelo, Abuela</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Continuar</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
